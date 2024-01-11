@@ -9,7 +9,7 @@
 </head>
 <body>
 @foreach ($pessoas as $pessoa)
-    @include('component.ex01', $pessoa)
+    @include('components.ex01', $pessoa)
 @endforeach
 </body>
 </html>

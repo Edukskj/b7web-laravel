@@ -9,20 +9,20 @@
 </head>
 <body>
 @foreach ($pessoas as $pessoa)
-    @component('component.ex01')
+    <x-ex01>
         @slot('image')
             {{$pessoa['image']}}
         @endslot
-        @slot('name')
+        @slot('nome')
             {{$pessoa['nome']}}
         @endslot
-        @slot('age')
+        @slot('idade')
             {{$pessoa['idade']}}
         @endslot
         @slot('birth')
             {{$pessoa['birth']}}
         @endslot
-    @endcomponent
+    </x-ex01>
 @endforeach
 </body>
 </html>
