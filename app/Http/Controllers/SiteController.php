@@ -33,7 +33,7 @@ class SiteController extends Controller
 
         $dados['pessoas'] = $pessoas;
 
-        return view('bemvindo', $dados);
+        return view('exercise01-with-include', $dados);
     }
 
 

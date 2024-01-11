@@ -9,10 +9,7 @@
 </head>
 <body>
 @foreach ($pessoas as $pessoa)
-    @include('component.ex01', ['image'=>$pessoa['image']])
-    @include('component.ex01', ['name'=>$pessoa['nome']])
-    @include('component.ex01', ['age'=>$pessoa['idade']])
-    @include('component.ex01', ['birth'=>$pessoa['birth']])
+    @include('component.ex01', $pessoa)
 @endforeach
 </body>
 </html>
