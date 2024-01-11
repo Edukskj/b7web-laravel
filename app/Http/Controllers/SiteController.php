@@ -41,10 +41,7 @@ class SiteController extends Controller
 
     public function exercicio2() {
 
-        $numero = 1;
-
-
-        $url = 'https://i.pravatar.cc/150?img='.$numero;
+        $url = 'https://i.pravatar.cc/150?img=';
 
 
         $dados['url'] = $url;
