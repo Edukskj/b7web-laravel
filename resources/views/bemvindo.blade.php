@@ -8,21 +8,6 @@
     <title>Ex01</title>
 </head>
 <body>
-@foreach ($pessoas as $pessoa)
-    @component('component.ex01')
-        @slot('image')
-            {{$pessoa['image']}}
-        @endslot
-        @slot('name')
-            {{$pessoa['nome']}}
-        @endslot
-        @slot('age')
-            {{$pessoa['idade']}}
-        @endslot
-        @slot('birth')
-            {{$pessoa['birth']}}
-        @endslot
-    @endcomponent
-@endforeach
+
 </body>
 </html>
