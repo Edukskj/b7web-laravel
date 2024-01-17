@@ -16,6 +16,11 @@ class InvoiceController extends Controller
         return $invoices;
     }
 
+    public function findOne(Request $request) {
+        $invoice = Invoice::find($request->id);
+        return $invoice;
+    }
+
     /**
      * Show the form for creating a new resource.
      */

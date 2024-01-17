@@ -15,4 +15,5 @@ Route::get('/addresses/{id}', [AddressController::class, 'findOne']);
 Route::post('/addressescreate', [AddressController::class, 'create']);
 
 Route::get('/invoices', [InvoiceController::class, 'index']);
+Route::get('/invoices/{id}', [InvoiceController::class, 'findOne']);
 Route::post('/invoicescreate', [InvoiceController::class, 'create']);
