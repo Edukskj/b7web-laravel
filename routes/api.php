@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AddressController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\InvoiceController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -12,3 +13,6 @@ Route::post('/userscreate', [UserController::class, 'create']);
 Route::get('/addresses', [AddressController::class, 'index']);
 Route::get('/addresses/{id}', [AddressController::class, 'findOne']);
 Route::post('/addressescreate', [AddressController::class, 'create']);
+
+Route::get('/invoices', [InvoiceController::class, 'index']);
+Route::post('/invoicescreate', [InvoiceController::class, 'create']);
