@@ -13,6 +13,11 @@ class Invoice extends Model
         'address_id',
         'user_id'
     ];
+
+    protected $hidden = [
+        'user_id',
+        'address_id'
+    ];
     use HasFactory;
 
     public function address() {
